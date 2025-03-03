@@ -1,19 +1,19 @@
 /* GENERAL PAGE STYLING */
 body {
-    font-family: 'Gotham','Verdana', sans-serif;
+    font-family: 'Gotham', 'Verdana', sans-serif;
     font-size: large;
     margin: 0;
     padding: 0;
-    background: #171926;
-    color: white;
+    background: #f7f7f7; /* Lightened background */
+    color: #333; /* Darker text for better readability */
     transition: background 0.3s ease-in-out;
 }
 
 /* HEADER STYLING */
 header {
-    color: white;
+    color: #333; /* Darker text for header */
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 10px;
     position: relative;
     top: 0;
@@ -29,7 +29,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* DEFINES HEADER SPACE */
+    background: rgba(255, 255, 255, 0.5); /* Lighter overlay */
 }
 
 header h1 {
@@ -47,12 +47,12 @@ header p {
 
 /* NAVIGATION BAR */
 nav {
-    background: #222;
+    background: #ffffff; /* White background for the nav */
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
 
 .nav-list {
@@ -71,20 +71,20 @@ nav {
 }
 
 .nav-list li:hover {
-    background: #ff6b6b;
+    background: #ff8e3b; /* Softer hover effect */
     border-radius: 5px;
     transform: scale(1.05);
 }
 
 .nav-list li a {
-    color: #FCFAF9;
+    color: #333; /* Dark text for links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .nav-list li a:hover {
-    color: #ffdd57;
+    color: #ffdd57; /* Soft yellow for hover */
 }
 
 /* HAMBURGER MENU */
@@ -95,7 +95,7 @@ nav {
     position: absolute;
     top: 15px;
     right: 20px;
-    color: white;
+    color: #333; /* Dark color for the menu icon */
 }
 
 /* MOBILE RESPONSIVE */
@@ -107,7 +107,7 @@ nav {
     .nav-list {
         display: none;
         flex-direction: column;
-        background: #222;
+        background: #ffffff; /* Light background for the mobile menu */
         width: 100%;
         position: absolute;
         top: 50px;
@@ -131,9 +131,9 @@ section {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.9); /* Lighter background for sections */
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -146,7 +146,7 @@ p {
 
 /* MAKES LINKS MORE NOTICEABLE */
 .ext-link {
-    background: aquamarine;
+    background: #00bcd4; /* Softer link background */
     color: black;
     border-radius: 5px;
     text-decoration: none;
@@ -155,7 +155,7 @@ p {
 }
 
 .ext-link:hover {
-    background: #ff6b6b;
+    background: #ff8e3b; /* Softer hover effect */
     color: #ffdd57;
 }
 
@@ -177,14 +177,14 @@ section:hover {
 .expandable {
     cursor: pointer;
     font-weight: bold;
-    color: #ffdd57;
+    color: #ffdd57; /* Lighter accent color */
     text-align: center;
     margin-top: 20px;
     transition: color 0.3s ease-in-out;
 }
 
 .expandable:hover {
-    color: #e6b800;
+    color: #e6b800; /* Slightly darker yellow */
 }
 
 .hidden-content {
@@ -212,7 +212,7 @@ section:hover {
     background: white;
     padding: 20px;
     width: 300px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
@@ -226,7 +226,7 @@ section:hover {
     max-width: 250px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
 
 /* TECH HERO IMAGES */
@@ -236,14 +236,14 @@ section:hover {
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
     transition: transform 0.3s ease-in-out;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #222;
-    color: white;
+    background-color: #ffffff; /* White background for footer */
+    color: #333; /* Dark text for footer */
     text-align: center;
     padding: 15px;
     position: relative;
@@ -251,22 +251,20 @@ footer {
 }
 
 footer a {
-    color: #ffdd57;
+    color: #ffdd57; /* Softer link color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
-    color: #e6b800;
+    color: #e6b800; /* Darker yellow for hover */
 }
 
 /* Button Styles */
 button {
     background-color: #ffdd57;
     color: black;
-    background-color: #ffdd57; /* Keep the yellow background */
-    color: #222; /* Dark color for better contrast */
     font-size: 18px;
     padding: 10px 20px;
     border: none;
@@ -278,10 +276,8 @@ button {
 
 button:hover {
     background-color: #e6b800;
-    background-color: #e6b800; /* Slightly darker yellow */
     transform: scale(1.05);
 }
-
 
 /* Animations */
 @keyframes fadeIn {
