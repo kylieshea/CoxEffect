@@ -1,6 +1,6 @@
 /* GENERAL PAGE STYLING */
 body {
-    font-family: 'Inter';
+    font-family: 'inter';
     font-size: large;
     margin: 0;
     padding: 0;
@@ -35,8 +35,8 @@ header::before {
 header h1 {
     font-size: 2.5em;
     display: inline-block;
-    z-index: 3;
-    color: #333;
+    position: relative;
+    z-index: 2;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -286,7 +286,7 @@ button:hover {
         transform: translateY(-10px);
     }
     to {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(0);
     }
 }
