@@ -289,3 +289,19 @@ button:hover {
         transform: translateY(0);
     }
 }
+
+.card {
+    flex: 1; /* Ensures cards take equal space */
+    min-width: 250px; /* Prevents them from becoming too small */
+    max-width: 350px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps content evenly distributed */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    height: 100%; /* Ensures all cards match height */
+}
