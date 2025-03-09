@@ -37,6 +37,7 @@ header h1 {
     display: inline-block;
     z-index: 3;
     color: #333;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header p {
