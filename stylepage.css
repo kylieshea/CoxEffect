@@ -44,11 +44,6 @@ header p {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
 /* NAVIGATION BAR */
 nav {
     background: #ffffff; /* White background for the nav */
@@ -90,7 +85,6 @@ nav {
 .nav-list li a:hover {
     color: #ffdd57; /* Soft yellow for hover */
 }
-
 
 /* HAMBURGER MENU */
 .menu-toggle {
