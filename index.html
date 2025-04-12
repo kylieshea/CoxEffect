@@ -51,6 +51,24 @@
     </div>
 </section>
 
+<script>
+    const greetingDiv = document.getElementById("greeting");
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour < 12) {
+        greeting = "Good morning, coxswain!";
+    } else if (hour < 18) {
+        greeting = "Good afternoon, coxswain!";
+    } else {
+        greeting = "Good evening, coxswain!";
+    }
+
+    greetingDiv.textContent = greeting;
+</script>
+
+    
 <!-- Footer -->
 <footer>
     <p>&copy; 2025 Cox & Effect | Designed by Kylie Beauchamp</p>
