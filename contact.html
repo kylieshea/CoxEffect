@@ -36,18 +36,44 @@
             <h2>Let's Connect</h2>
             <p>Whether you're a novice coxswain looking for guidance, a coach seeking collaboration, or a rower with feedback, I would love to hear from you. Reach out through the form below or send me a message directly.</p>
 
-            <form action="#" method="post" class="contact-form">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+           <form id="contactForm" class="contact-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="6" required></textarea><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="6" required></textarea><br><br>
 
-                <input type="submit" value="Send Message">
-            </form>
+    <input type="submit" value="Send Message">
+</form>
+
+<!-- Display submitted data -->
+<div id="formOutput" style="margin-top: 2rem; font-weight: bold;"></div>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from refreshing the page
+
+    // Capture form data
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Display result
+    const outputDiv = document.getElementById("formOutput");
+    outputDiv.innerHTML = `
+      <p>Thank you, <strong>${name}</strong>! Your message has been received.</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Message:</strong> ${message}</p>
+    `;
+
+    // Optionally, reset the form
+    document.getElementById("contactForm").reset();
+  });
+</script>
+
         </section>
     </main>
 
