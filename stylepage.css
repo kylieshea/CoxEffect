@@ -195,37 +195,7 @@ section:hover {
     display: block;
 }
 
-/* TEAM SECTION STYLING */
-.team-container {
-    color: black;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    size: medium;
-}
 
-.team-member {
-    text-align: center;
-    background: white;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.team-member:hover {
-    transform: scale(1.05);
-}
-
-.team-image {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
-}
 
 /* TECH HERO IMAGES */
 .hero-image {
